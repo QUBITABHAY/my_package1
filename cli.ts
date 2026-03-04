@@ -9,6 +9,7 @@ import INIT_TS from "./commands/init";
 import JokeCommand from "./commands/joke";
 import MultiplyCommand from "./commands/multiply";
 import PokemonCommand from "./commands/pokemon";
+import QuoteCommand from "./commands/quote";
 import SubtractCommand from "./commands/subtract";
 import TimeCommand from "./commands/time";
 
@@ -24,5 +25,6 @@ engine.resisterCommands([
   DateCommand,
   JokeCommand,
   PokemonCommand,
+  QuoteCommand,
 ]);
 engine.run();

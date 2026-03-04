@@ -9,6 +9,7 @@ A simple Node.js CLI tool powered by `commander` and `axios`.
 - Date and time helpers
 - Random joke fetcher
 - Pokémon info lookup (via PokeAPI)
+- Random quote fetcher
 
 ## Prerequisites
 
@@ -111,7 +112,13 @@ mycli joke
 mycli pokemon pikachu
 ```
 
-### 11) Help Command
+### 11) Random Quote
+
+```bash
+mycli quote
+```
+
+### 12) Help Command
 
 ```bash
 mycli help
@@ -133,6 +140,7 @@ mycli help
 │   ├── joke.ts
 │   ├── multiply.ts
 │   ├── pokemon.ts
+│   ├── quote.ts
 │   ├── subtract.ts
 │   └── time.ts
 ├── dist/                  # Compiled output
@@ -144,4 +152,4 @@ mycli help
 ## Notes
 
 - The CLI executable is configured through `bin` in `package.json` as `mycli`.
-- API-based commands (`pokemon`, `joke`) require an internet connection.
+- API-based commands (`pokemon`, `joke`, `quote`) require an internet connection.
