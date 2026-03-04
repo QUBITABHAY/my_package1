@@ -1,0 +1,21 @@
+class SubtractCommand {
+  program;
+
+  constructor(program) {
+    this.program = program;
+  }
+
+  register() {
+    this.program
+      .command("subtract <a> <b>")
+      .description("Subtract second number from first")
+      .action((a, b) => this.subtract(a, b));
+  }
+
+  subtract(a, b) {
+    const result = Number(a) - Number(b);
+    console.log(result);
+  }
+}
+
+export default SubtractCommand;

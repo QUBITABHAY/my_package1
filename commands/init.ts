@@ -26,3 +26,5 @@ class INIT_TS {
     execSync(cmd, { stdio: "inherit" });
   }
 }
+
+export default INIT_TS;

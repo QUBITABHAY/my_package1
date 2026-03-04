@@ -57,55 +57,61 @@ mycli --help
 mycli greet Abhay
 ```
 
-### 2) Add
+### 2) Init TypeScript Project
+
+```bash
+mycli init-ts my-new-app
+```
+
+### 3) Add
 
 ```bash
 mycli add 10 5
 ```
 
-### 3) Subtract
+### 4) Subtract
 
 ```bash
 mycli subtract 10 5
 ```
 
-### 4) Multiply
+### 5) Multiply
 
 ```bash
 mycli multiply 10 5
 ```
 
-### 5) Divide
+### 6) Divide
 
 ```bash
 mycli divide 10 5
 ```
 
-### 6) Current Time
+### 7) Current Time
 
 ```bash
 mycli time
 ```
 
-### 7) Current Date
+### 8) Current Date
 
 ```bash
 mycli date
 ```
 
-### 8) Random Joke
+### 9) Random Joke
 
 ```bash
 mycli joke
 ```
 
-### 9) Pokémon Info
+### 10) Pokémon Info
 
 ```bash
 mycli pokemon pikachu
 ```
 
-### 10) Help Command
+### 11) Help Command
 
 ```bash
 mycli help
@@ -115,9 +121,23 @@ mycli help
 
 ```text
 .
-├── cli.ts          # CLI source
-├── dist/           # Compiled output
+├── cli.ts                 # CLI source
+├── CLI_Engine/
+│   └── cli_engine.ts      # CLI engine wrapper
+├── commands/              # Command classes
+│   ├── add.ts
+│   ├── date.ts
+│   ├── divide.ts
+│   ├── greet.ts
+│   ├── init.ts
+│   ├── joke.ts
+│   ├── multiply.ts
+│   ├── pokemon.ts
+│   ├── subtract.ts
+│   └── time.ts
+├── dist/                  # Compiled output
 ├── package.json
+├── README.md
 └── tsconfig.json
 ```
 
